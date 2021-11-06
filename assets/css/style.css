@@ -1,0 +1,16 @@
+/* html {
+    background-image: linear-gradient(90deg, #419AF2 0%, #6CC8F1 50%, #89E7F0 90%);
+} */
+
+header {
+    display: grid;
+    justify-content: center;
+    color: white;
+    background-image: linear-gradient(90deg, #419AF2 0%, #6CC8F1 50%, #89E7F0 90%);
+    text-shadow: 2px 2px 4px #132147;
+}
+
+h1,
+h2 {
+    font-family: 'Merriweather Sans', sans-serif;
+}
