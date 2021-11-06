@@ -18,20 +18,29 @@
     <header>
         <h1 class="m-5">Weather Dashboard</h1>
     </header>
-    <main>
-        <div class="m-3 col col-lg-2">
-            <h2 class="mt-2">Search for a city:</h2>
-            <div class="input-group mb-3 mt-3">
-                <input type="text" class="form-control" id="city" placeholder="New York">
-                <button class="btn btn-primary" type="button" id="button-addon2">Search</button>
+    <main class="row">
+        <div class="col col-lg-4">
+            <div class="m-3 col col-lg-6">
+                <h2 class="mt-2">Search for a city:</h2>
+                <div class="input-group mb-3 mt-3">
+                    <input type="text" class="form-control" id="city" placeholder="New York">
+                    <button class="btn btn-primary" type="button" id="button-addon2">Search</button>
+                </div>
+                <hr style="height:2px; color: black;">
             </div>
-            <hr style="height:2px; color: black;">
+            <div class="m-3 col col-lg-6">
+                <h2 class="mt-2">Search History:</h2>
+            </div>
         </div>
-        <div class="m-3 col col-lg-2">
-            <h2 class="mt-2">Search History:</h2>
+        <div class="card border-2 col-sm-12 col-lg-7 m-3">
+            <div id="current-weather-title"></div>
+            <div id="current-weather"></div>
         </div>
+
+        <div id="5-day-forecast"></div>
     </main>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="assets\js\script.js"></script>
 </body>
 
