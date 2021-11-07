@@ -1,6 +1,6 @@
-* {
+/* * {
     overflow: hidden;
-}
+} */
 
 .row {
     justify-content: center;
@@ -25,6 +25,7 @@ h2 {
 
 p {
     margin: 1rem;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #good-uvi {
@@ -37,11 +38,37 @@ p {
 }
 
 #regular-uvi {
-    background-color: yellow;
+    background-color: rgb(255, 187, 0);
     color: white;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    border-radius: .25rem;
 }
 
 #bad-uvi {
-    background-color: red;
+    background-color: rgb(255, 51, 0);
     color: white;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    border-radius: .25rem;
+}
+
+img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.daily-forecast-img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.five-day-forecast {
+    border-radius: .25rem;
+}
+
+#daily-forecast {
+    display: flex;
 }

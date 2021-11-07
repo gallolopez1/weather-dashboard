@@ -18,8 +18,8 @@
     <header>
         <h1 class="m-5">Weather Dashboard</h1>
     </header>
-    <main class="row">
-        <div class="col col-lg-4">
+    <main class="row w-100">
+        <div class="col col-lg-4 ms-1">
             <div class="m-3 col col-lg-6">
                 <h2 class="mt-2">Search for a city:</h2>
                 <div class="input-group mb-3 mt-3">
@@ -32,12 +32,16 @@
                 <h2 class="mt-2">Search History:</h2>
             </div>
         </div>
-        <div class="card border-2 col-sm-12 col-lg-7 m-3">
-            <div id="current-weather-title"></div>
-            <div id="current-weather"></div>
+        <div class="weather-forecast col-sm-12 col-lg-7">
+            <div class="me-0 card border-2 col mb-3 mt-3">
+                <div class="d-flex  align-items-center w-100" id="current-weather-title"></div>
+                <div id="current-weather"></div>
+            </div>
+            <div id="daily-forecast" class="card-group">
+
+            </div>
         </div>
 
-        <div id="5-day-forecast"></div>
     </main>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
