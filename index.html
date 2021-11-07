@@ -19,8 +19,8 @@
         <h1 class="m-5">Weather Dashboard</h1>
     </header>
     <main class="row w-100">
-        <div class="col col-lg-4 ms-1">
-            <div class="m-3 col col-lg-6">
+        <div class=" main-search col col-lg-3">
+            <div class="col col-lg-10">
                 <h2 class="mt-2">Search for a city:</h2>
                 <div class="input-group mb-3 mt-3">
                     <input type="text" class="form-control" id="city" placeholder="New York">
@@ -28,8 +28,11 @@
                 </div>
                 <hr style="height:2px; color: black;">
             </div>
-            <div class="m-3 col col-lg-6">
+            <div class="col col-lg-10">
                 <h2 class="mt-2">Search History:</h2>
+                <div id="search-btn" class="d-flex flex-column">
+                    <button class="clear-history" onclick="clearHistory()">Clear Search</button>
+                </div>
             </div>
         </div>
         <div class="weather-forecast col-sm-12 col-lg-7">
@@ -37,12 +40,20 @@
                 <div class="d-flex  align-items-center w-100" id="current-weather-title"></div>
                 <div id="current-weather"></div>
             </div>
+            <div id="daily-forecast-title"></div>
             <div id="daily-forecast" class="card-group">
 
             </div>
         </div>
 
     </main>
+    <footer>
+        <div class="signature">
+            <h4>
+                &copy; 2021 GGL
+            </h4>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="assets\js\script.js"></script>

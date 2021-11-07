@@ -2,6 +2,24 @@
     overflow: hidden;
 } */
 
+body {
+    background-image: linear-gradient(90deg, #419AF2 0%, #6CC8F1 50%, #89E7F0 90%);
+}
+
+.signature {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-search {
+    display: flex;
+    flex-direction: column;
+}
+
 .row {
     justify-content: center;
 }
@@ -71,4 +89,21 @@ img {
 
 #daily-forecast {
     display: flex;
+}
+
+.clear-history {
+    border-radius: .25rem;
+    background-color: white;
+    border: 0;
+}
+
+.clear-history:hover {
+    box-shadow: 2px 2px black;
+}
+
+@media only screen and (max-width: 720px) {
+    #daily-forecast {
+        display: flex;
+        flex-direction: column;
+    }
 }
