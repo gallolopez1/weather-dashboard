@@ -7,7 +7,11 @@
 
 ## <u>App - Preview:</u>
 
-<img src="#" alt="#" />
+## Desktop Weather Dashboard Preview
+<img src="assets\images\desktop-weather-dashboard.jpg" alt="Desktop Weather Dashboard" />
+
+## Mobile Weather Dashboard Preview
+<img src="assets\images\mobile-weather-dashboard.jpg" alt="Mobile Weather Dashboard" />
 
 ## Activity Instructions:
 
