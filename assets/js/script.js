@@ -120,6 +120,7 @@ var displayData = function(dataObj, city) {
 }
 
 var dailyForecast = function(dataObj) {
+    $("#daily-forecast-title").html("");
     //add title
     var dailyForecastTitle = document.createElement("h2");
     dailyForecastTitle.textContent = ("5-Day Forecast:");
