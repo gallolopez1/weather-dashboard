@@ -12,12 +12,16 @@ var getSeacrh = function() {
     searched = JSON.parse(searched);
     for (x in searched) {
         searchHistory.push(searched[x]);
-        var buttonEl = document.createElement("button");
-        buttonEl.setAttribute("data-search", searched[x]);
-        buttonEl.textContent = searched[x];
-        buttonEl.className = "btn btn-dark m-2"
-        searchHistoryBtn.append(buttonEl);
+        createButton(searched[x]);
     }
+}
+
+function createButton(city) {
+    var buttonEl = document.createElement("button");
+    buttonEl.setAttribute("data-search", city);
+    buttonEl.textContent = city;
+    buttonEl.className = "btn btn-dark m-2"
+    searchHistoryBtn.append(buttonEl);
 }
 
 // fetch weather data for specific city
@@ -34,6 +38,7 @@ var getLatLon = function(city) {
                 response.json().then(function(data) {
                     displayWeather(data.coord.lat, data.coord.lon, city);
                     searchHistory.push(city);
+                    createButton(city);
                     localStorage.setItem("searchHistory", JSON.stringify(searchHistory));
                     $('#city').val('');
                 });
