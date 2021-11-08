@@ -13,6 +13,8 @@ body {
     position: fixed;
     bottom: 0;
     font-family: 'Open Sans', sans-serif;
+    color: white;
+    background-image: linear-gradient(90deg, #419AF2 0%, #6CC8F1 50%, #89E7F0 90%);
 }
 
 .main-search {
@@ -105,5 +107,13 @@ img {
     #daily-forecast {
         display: flex;
         flex-direction: column;
+    }
+    main {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    .row {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
     }
 }
