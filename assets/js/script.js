@@ -37,9 +37,7 @@ var getLatLon = function(city) {
             if (response.ok) {
                 response.json().then(function(data) {
                     displayWeather(data.coord.lat, data.coord.lon, city);
-                    searchHistory.push(city);
-                    createButton(city);
-                    localStorage.setItem("searchHistory", JSON.stringify(searchHistory));
+                    saveHistory(city);
                     $('#city').val('');
                 });
             } else {
@@ -51,6 +49,13 @@ var getLatLon = function(city) {
         });
     // window.location.reload();
 
+}
+
+function saveHistory(city) {
+    if (!(searchHistory.indexOf(city) > -1)) {
+        searchHistory.push(city);
+    }
+    localStorage.setItem("searchHistory", JSON.stringify(searchHistory));
 }
 
 var displayWeather = function(lat, long, city) {
@@ -186,6 +191,10 @@ $(document).on('click', '.btn', function() {
     if (city === null || city === "") {
         city = $(this).attr('data-search');
     }
+    if (!(searchHistory.indexOf(city) > -1)) {
+        createButton(city);
+    }
+
     getLatLon(city);
 });
 
